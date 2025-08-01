@@ -19,9 +19,10 @@ export class ServerApp {
     const wasCreated = new SaveFile().execute({
       fileContent: table,
       fileDestination: destination,
-      fileName: `${name}-${base}`,
+      fileName: `${name}`,
     });
     if (showTable) console.log(`Tabla de multiplicar del ${base}:\n${table}`);
+
 
     wasCreated
       ? console.log("File created successfully.")
